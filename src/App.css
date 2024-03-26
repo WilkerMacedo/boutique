@@ -100,23 +100,23 @@ nav a:hover {
   justify-content: center;
   align-items: flex-start;
   text-align: left;
-  margin-left: -120px;
-  margin-top: -50px;
+  margin-left: -7.5rem;
+  margin-top: -3.125rem;
 }
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   color: #4c4c4c;
   /* line-height: 5rem; */
-  max-width: 600px;
+  max-width: 37.5rem;
   text-align: center;
 }
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
-  max-width: 500px;
+  max-width: 31.25rem;
   color: #6a6a6a;
   margin: 1.5rem 0rem;
   text-align: center;
-  margin-left: 60px;
+  margin-left: 3.75rem;
 }
 .secondary-button {
   padding: 1rem 2.5rem;
@@ -153,16 +153,16 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-left: 80px;
-  margin-top: -120px;
-  margin-bottom: -100px;
+  margin-left: 5rem;
+  margin-top: -7.5rem;
+  margin-bottom: -6.25rem;
 }
 .primary-subheading {           /** sub-heading **/
-  font-weight: 700;
+  font-weight: 43.75rem;
   color: white;
   font-size: 1.15rem;
   text-align: center;
-  margin-left: -1px;
+  margin-left: -0.063rem;
 }
 .about-buttons-container {
   margin-top: 2rem;
@@ -176,7 +176,7 @@ nav a:hover {
   border-radius: 5rem;
   font-size: 1.1rem;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 37.5rem;
   color: #484848;
   transition: 0.2s;
   display: flex;
@@ -188,7 +188,7 @@ nav a:hover {
   margin-right: 1rem;
 }
 .contact-page-wrapper h1 {
-  max-width: 900px !important;
+  max-width: 56.25rem !important;
 }
 .contact-page-wrapper {
   display: flex;
@@ -199,7 +199,7 @@ nav a:hover {
 }
 .contact-form-container {
   background-color: white;
-  max-width: 700px;
+  max-width: 43.75rem;
   width: 100%;
   margin-top: 3rem;
   display: flex;
@@ -221,7 +221,7 @@ nav a:hover {
   margin-top: 10rem;
 }
 .footer-logo-container {
-  max-width: 110px;
+  max-width: 6.875rem;
 }
 .footer-icons {
   margin-top: 2.5rem;
@@ -242,7 +242,7 @@ nav a:hover {
 .footer-section-columns {
   display: flex;
   flex-direction: column;
-  min-width: 190px;
+  min-width: 11.875rem;
 }
 .footer-section-columns span {
   margin: 0.25rem 0rem;
@@ -268,7 +268,7 @@ nav a:hover {
 .testimonial-section-bottom p {
   font-weight: 700;
   color: #515151;
-  max-width: 500px;
+  max-width: 31.25rem;
   font-size: 1.1rem;
   margin: 2rem 0rem;
 }
@@ -285,10 +285,10 @@ nav a:hover {
 }
 .work-section-top p {
   text-align: center;
-  max-width: 600px !important;
+  max-width: 37.5rem !important;
 }
 .work-section-top h1 {
-  max-width: 700px !important;
+  max-width: 43.75rem !important;
 }
 .work-section-top {
   display: flex;
@@ -297,8 +297,8 @@ nav a:hover {
   flex-direction: column;
 }
 .work-section-info {
-  width: 290px;
-  min-height: 350px;
+  width: 18.125rem;
+  min-height: 21.875rem;
   background-color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -336,12 +336,12 @@ nav a:hover {
     font-size: 1rem;
   }
   .home-bannerImage-container {
-    max-width: 600px;
+    max-width: 37.5rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
   .nav-logo-container {
-    max-width: 140px;
+    max-width: 8.75rem;
   }
   .navbar-links-container {
     display: none;
@@ -350,7 +350,7 @@ nav a:hover {
     display: flex;
   }
   .home-bannerImage-container {
-    max-width: 450px;
+    max-width: 28.125rem;
   }
   .home-banner-container,
   .about-section-container {
@@ -364,7 +364,7 @@ nav a:hover {
   .home-image-section,
   .about-section-image-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 25rem;
   }
   .primary-heading {
     text-align: center;
@@ -450,34 +450,81 @@ nav a:hover {
 /* my personalized styles */    /* my personalized styles */
 
 #home {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;
   background-color: #deaeeb;
-  padding: 200px;
+  padding: 12.5rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  #home {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    padding-left: 12.10rem;
+  }
 }
 
 #about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;
   background-color: #bd8bca;
-  padding: 200px;
+  padding: 12.5rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  #about {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    padding-left: 0.10rem;
+    padding-top: 0.10rem;
+  text-align: center;
+  }
 }
 
 #services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;
   background-color: #ba75cf;
-  padding: 200px;
+  padding: 12.5rem;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  #services {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    padding-left: 0rem;
+    padding-top: 10.10rem;
+    text-align: center;
+  }
 }
 
 #contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;
   background-color: #9356a3;
-  padding: 200px;
+  padding: 12.5rem;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding-top: 3.125rem;
+  padding-bottom: 5rem;
 }
+
+@media (max-width: 768px) {
+  #contact {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    padding-left: 4.10rem;
+    padding-top: 3.10rem;
+  text-align: center;
+  }
+}
+
 
 #footer {
   background-color: #c444e4;
-  padding: 35px;
+  padding: 2.188rem;
   text-align: center;
   font-size: 1.0rem;
   font-weight: 600;
@@ -487,45 +534,60 @@ nav a:hover {
 /** pictures settings **/    /** pictures settings **/
 
 #logo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;
   position: absolute;
-  right: 150px;
+  right: 9.375rem;
   width: 30%;
-  bottom: 20px;
+  bottom: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  #logo {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    top: 9.90rem;
+    left: 9.60rem;
+    width: 40%;
+  }
 }
 
 .aboutpics {
   position: relative;
   background-color: #ba75cf;
-  margin-top: 15px;
+  margin-top: 0.938rem;
 }
 
 #short1 {
   position: relative;
-  right: 57px;
+  right: 3.563rem;
   width: 30%;
-  bottom: 20px;
-  top: 20px;
+  bottom: 1.25rem;
+  top: 1.25rem;
 }
 
 #short2 {
   position: relative;
-  right: 19px;
+  right: 1.188rem;
   width: 30%;
-  bottom: 20px;
-  top: 20px;
+  bottom: 1.25rem;
+  top: 1.25rem;
 }
 
 #short3 {
   position: relative;
-  right: -23px;
+  right: -1.438rem;
   width: 29%;
-  bottom: 20px;
-  top: 20px;
+  bottom: 1.25rem;
+  top: 1.25rem;
 }
 
 #abouttext {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;
   text-align: center;
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
 
 /** anchor disguised as button **/    /** anchor disguised as button **/
@@ -545,8 +607,12 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  margin-top: 25px;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;
 }
+
 
 .fake-button:hover {
   background-color: #e48f0f;
@@ -561,70 +627,79 @@ nav a:hover {
 
 #zap {
   position: relative;
-  right: 0px;
+  right: 0rem;
   width: 10%;
-  bottom: 20px;
-  top: 20px;
-  margin-bottom: 20px;
-  padding-top: 0px;
-  margin-top: -20px;
+  bottom: 1.25rem;
+  top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-top: 0rem;
+  margin-top: -1.25rem;
 }
 
 #face {
   position: relative;
-  right: 0px;
+  right: 0rem;
   width: 10%;
-  bottom: 20px;
-  top: 20px;
-  margin-bottom: 20px;
+  bottom: 1.25rem;
+  top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 #insta {
   position: relative;
-  right: 0px;
+  right: 0rem;
   width: 10%;
-  bottom: 20px;
-  top: 20px;
-  margin-bottom: 20px;
+  bottom: 1.25rem;
+  top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .zap {
   background-color: #ac72bd;
-  padding: 8px 0 8px 0;
-  margin-bottom: 20px;
+  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 1.25rem;
 }
 
 .face {
   background-color: #ac72bd;
-  padding: 8px 0 8px 0;
-  margin-bottom: 20px;
+  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 1.25rem;
 }
 
 .insta {
   background-color: #ac72bd;
-  padding: 8px 0 8px 0;
-  margin-bottom: 20px;
+  padding: 0.5rem 0 0.5rem 0;
+  margin-bottom: 1.25rem;
 }
 
-.subtitle {           
+.subtitle {     
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;      
   font-weight: 700;
   color: #4c4c4c;
   font-size: 1.15rem;
   text-align: center;
-  margin-left: -1px;
+  margin-left: -0.063rem;
 }
 
-.subtitle2 {           
+.subtitle2 {    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;       
   color: #3b3b3b;
   text-align: center;
-  margin-left: -1px;
+  margin-left: -0.063rem;
 }
 
-.subtitle3 {           
+.subtitle3 {     
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-gap: 1.25rem;      
   font-weight: 700;
   color: #474747;
   font-size: 1.15rem;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 0.938rem;
   margin-bottom: 8px;
 }

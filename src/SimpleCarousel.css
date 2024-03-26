@@ -11,7 +11,7 @@
     position: relative;
     max-width: 400px; /* Match the max-width of the images */
     margin: 0 auto;
-    margin-top: -120px;
+    margin-top: -100px;
   margin-bottom: -100px;
   }
 
@@ -52,6 +52,14 @@
     font-size: 1.1rem;
     font-weight: 600;
     position: absolute;
+  }
+
+  @media (max-width: 768px) {
+    .right-arrow {
+      z-index: 10;
+      right: -150px;
+      grid-template-columns: 1fr; /* Single column layout for mobile */
+    }
   }
   
   .left-arrow:hover, .right-arrow:hover {
