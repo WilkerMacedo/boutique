@@ -447,7 +447,7 @@ nav a:hover {
   }
 }
 
-/* my personalized styles */    /* my personalized styles */
+/* my personalized styles */     /* my personalized styles */   /* my personalized styles */
 
 #home {
   display: grid;
@@ -580,6 +580,15 @@ nav a:hover {
   width: 29%;
   bottom: 1.25rem;
   top: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  #short1, #short2, #short3 {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    top: 1.25rem;
+    right: 0.6rem;
+    width: 80%;
+  }
 }
 
 #abouttext {
